@@ -433,11 +433,11 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--space-5);
+  gap: 1.25rem;
 }
 .equipment-card {
   height: 100%;
-  padding: var(--space-5);
+  padding: 1.25rem;
   background: var(--surface);
   border-radius: 10px;
 }
@@ -690,6 +690,118 @@
   font-size: 0.8rem;
   font-weight: 600;
 }
+
+/* ─── Video player ──────────────────────────────────────────────────── */
+.watch { padding: var(--space-24) 0; background: var(--bg); }
+.player {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid rgba(145,151,80,0.2);
+  overflow: hidden;
+}
+.player--playlist { grid-template-columns: 1fr; }
+@media (min-width: 900px) {
+  .player--playlist { grid-template-columns: 2fr 1fr; gap: 0; }
+}
+.player__stage {
+  position: relative;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 80vh;
+}
+.player__video {
+  display: block;
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  background: #000;
+  cursor: pointer;
+}
+.player__stage:fullscreen { max-height: none; }
+.player__stage:fullscreen .player__video { max-height: 100vh; height: 100%; }
+.player__bigplay {
+  position: absolute;
+  inset: 0 0 56px 0;
+  margin: auto;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: rgba(11,11,12,0.7);
+  color: var(--accent);
+  font-size: 1.6rem;
+  padding-left: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+.player__bigplay:hover { transform: scale(1.08); background: rgba(145,151,80,0.25); }
+.player__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px var(--space-3);
+  background: linear-gradient(to top, rgba(11,11,12,0.95), rgba(11,11,12,0.8));
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.player__btn {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.player__btn:hover { color: var(--accent); background: rgba(255,255,255,0.06); }
+.player__time { flex: none; font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.player__range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--accent) var(--fill, 0%), rgba(255,255,255,0.18) var(--fill, 0%));
+  cursor: pointer;
+}
+.player__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+}
+.player__range::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); border: none; }
+.player__seek { flex: 1; min-width: 0; }
+.player__vol { flex: none; width: 72px; }
+@media (max-width: 520px) { .player__vol { display: none; } }
+.player__info { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
+.player__title { font-size: 1.3rem; text-transform: uppercase; color: var(--text); margin: 0; }
+.player__desc { color: var(--muted); font-size: 0.92rem; line-height: 1.6; margin: 0; }
+.player__list { list-style: none; padding: 0; margin: var(--space-2) 0 0; display: flex; flex-direction: column; gap: var(--space-1); }
+.player__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px var(--space-3);
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+}
+.player__item:hover { background: rgba(255,255,255,0.05); color: var(--text); }
+.player__item--active { background: rgba(145,151,80,0.15); color: var(--text); }
+.player__item-n { flex: none; width: 1.4em; color: var(--accent); font-weight: 700; font-size: 0.8rem; text-align: center; }
 
 /* Full-screen image viewer */
 .lightbox {
@@ -1633,6 +1745,7 @@
 .coaches,
 .schedule-section,
 .equipment,
+.watch,
 .first-class,
 .faq,
 .location,

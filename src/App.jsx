@@ -5,6 +5,7 @@ import Hero from './modules/Hero.jsx'
 import Marquee from './modules/Marquee.jsx'
 import Programs from './modules/Programs.jsx'
 import VideoReel from './modules/VideoReel.jsx'
+import VideoPlayer from './modules/VideoPlayer.jsx'
 import Kids from './modules/Kids.jsx'
 import Coaches from './modules/Coaches.jsx'
 import Schedule from './modules/Schedule.jsx'
@@ -65,6 +66,7 @@ function App() {
       <Marquee />
       <Programs onCTA={openQuiz} />
       <VideoReel />
+      <VideoPlayer />
       <Kids onCTA={openQuiz} />
       <Coaches />
       <Schedule />
