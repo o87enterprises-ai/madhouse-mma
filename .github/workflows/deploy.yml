@@ -1,23 +1,14 @@
 name: Deploy to Cloudflare Pages
 
-# Production deploys on every push/merge to main; pull requests get a preview deploy.
+# Production deploys on every push/merge to main.
 on:
   push:
     branches: [main]
-  pull_request:
   workflow_dispatch:
-
-concurrency:
-  group: deploy-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
 
@@ -30,11 +21,8 @@ jobs:
 
       - run: npm run build
 
-      - name: Deploy
-        # Skip on PRs from forks (secrets are not available to them)
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-        uses: cloudflare/wrangler-action@v3
+      - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=madhouse-mma --branch=${{ github.head_ref || github.ref_name }}
+          command: pages deploy dist --project-name=madhouse-mma --branch=main
