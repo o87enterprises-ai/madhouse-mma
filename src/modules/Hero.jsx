@@ -59,8 +59,8 @@ export default function Hero({ onCTA }) {
           <button className="btn btn--accent btn--lg" onClick={() => onCTA(null)}>
             Claim your free class
           </button>
-          <a href="tel:+15415550100" className="btn btn--ghost btn--lg">
-            Call 541&#8209;555&#8209;0100
+          <a href="tel:+15413906334" className="btn btn--ghost btn--lg">
+            Call 541&#8209;390&#8209;6334
           </a>
         </motion.div>
       </div>

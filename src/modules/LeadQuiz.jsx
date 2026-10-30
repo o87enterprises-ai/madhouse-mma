@@ -344,7 +344,7 @@ export default function LeadQuiz({ open, program, onClose }) {
                       type="tel"
                       autoComplete="tel"
                       required
-                      placeholder="541-555-0100"
+                      placeholder="541-390-6334"
                       value={form.phone}
                       onChange={e => set('phone', e.target.value)}
                     />
@@ -401,7 +401,7 @@ export default function LeadQuiz({ open, program, onClose }) {
                   {site.phone}
                 </a>
                 <p className="quiz-success__small">
-                  123 Example St, Cottage Grove, OR — see you on the mat.
+                  172 Gateway Blvd, Cottage Grove, OR — see you on the mat.
                 </p>
                 <button className="quiz-back" style={{ marginTop: '1.5rem' }} onClick={onClose}>
                   Close

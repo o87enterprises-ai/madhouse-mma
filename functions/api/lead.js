@@ -96,7 +96,7 @@ export async function onRequestPost({ request, env }) {
     ).run()
   } catch (err) {
     console.error('[lead] D1 insert error:', err)
-    return json({ error: 'A server error occurred. Please call us at 541-555-0100.' }, 500)
+    return json({ error: 'A server error occurred. Please call us at 541-390-6334.' }, 500)
   }
 
   // ── Alerts (fire-and-forget — don't delay the response) ──────────────

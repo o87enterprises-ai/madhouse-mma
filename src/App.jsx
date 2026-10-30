@@ -37,7 +37,7 @@ function PaymentToast({ onClose }) {
       <span className="payment-toast__msg">
         {success
           ? 'Payment confirmed! Welcome to Grove. Check your email for a receipt.'
-          : 'Payment cancelled — no charge was made. Questions? Call 541-555-0100.'}
+          : 'Payment cancelled — no charge was made. Questions? Call 541-390-6334.'}
       </span>
       <button className="payment-toast__close" onClick={onClose} aria-label="Dismiss">✕</button>
     </div>
