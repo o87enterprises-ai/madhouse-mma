@@ -1,0 +1,8 @@
+/* Global resets — design tokens live in styles/tokens.css */
+img, video { max-width: 100%; display: block; }
+a { color: inherit; }
+p { margin: 0; }
+
+#root {
+  min-height: 100svh;
+}

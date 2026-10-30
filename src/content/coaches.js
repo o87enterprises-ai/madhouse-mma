@@ -1,0 +1,103 @@
+// Coach bios supplied by the client (Chad). More bios are coming — TODO(client).
+// fullBio paragraphs are separated by a blank line (\n\n).
+export const coaches = [
+  {
+    id: 'chad',
+    name: 'Coach Chad Mertens',
+    title: 'Head Striking & MMA Coach',
+    mediaKey: 'chad',
+    altText: 'Coach Chad Mertens',
+    shortBio: 'Former pro MMA fighter · 19 am/pro bouts · BJJ Purple Belt',
+    // TODO(client): Chad is sending an updated bio
+    fullBio: 'Chad grew up in Cottage Grove and graduated from CGHS before becoming, in 2013 at age 19, the youngest pro MMA fighter from Lane or Douglas County. He competed professionally across six states with a background spanning MMA, boxing, Muay Thai, wrestling, and BJJ, and earned his purple belt in Brazilian Jiu-Jitsu. His career began in 2010 and included 19 combined amateur and professional bouts. Now he channels that experience into developing the next generation of fighters and fitness athletes at Grove.',
+    programs: ['mma'],
+  },
+  {
+    id: 'monique',
+    name: 'Monique',
+    // TODO(client): last name
+    title: 'Homeschool Jiu-Jitsu Coach',
+    mediaKey: 'monique',
+    altText: 'Monique, homeschool jiu-jitsu coach',
+    shortBio: 'Blue belt · Competitor · Youth leader & homeschool mom',
+    fullBio: [
+      'I’m a wife, mom to two boys, homeschool mom, and a youth leader at my church. Life keeps me pretty busy, but I always make time for one of my favorite things: jiu-jitsu!',
+      'My journey started with Muay Thai, and after my husband very lovingly begged me to try jiu-jitsu for what felt like forever, I finally gave it a shot. I fell in love pretty quickly! Now, two and a half years later, I’m a blue belt, have competed multiple times, and love jiu-jitsu just as much if not more than when I started.',
+      'I’m excited to share that love with others, especially kids, and help them discover the confidence, discipline, problem-solving skills, and fun that jiu-jitsu has to offer. I can’t wait to learn, train, and grow alongside them!',
+    ].join('\n\n'),
+    programs: ['kids'],
+  },
+  {
+    id: 'leon',
+    name: 'Professor Leon Kallai',
+    title: 'Jiu-Jitsu & Judo Coach',
+    mediaKey: 'leon',
+    altText: 'Professor Leon Kallai',
+    shortBio: 'BJJ Black Belt 2025 · Judo Brown Belt · U.S. Army Veteran',
+    fullBio: [
+      'Began his martial arts journey in 1995, starting Judo as an eighth grader searching for discipline and direction. What began as a positive outlet quickly became a lifelong pursuit. He went on to wrestle for North Valley High School while continuing to compete in Judo tournaments throughout the off-season, eventually earning his Judo brown belt.',
+      'As a competitor, Leon medaled in every Judo tournament he entered — approximately 15 events — and was a multiple-time medalist at the Oregon State Games, including a silver medal in the brown/black belt division. While he later competed in Brazilian Jiu-Jitsu, injuries limited his ability to pursue competition extensively as an adult. His focus ultimately shifted toward coaching, technical development, and mentorship.',
+      'Leon enlisted in the U.S. Army and served in Iraq before returning home and resuming his martial arts journey in 2008. He began training in Brazilian Jiu-Jitsu at Team Quest under Fabiano Scherner, where he built his foundation and continued evolving his grappling system. Through years of consistent training and coaching, he earned his Brazilian Jiu-Jitsu black belt in 2025. In addition to his martial arts career, Leon has also worked as a wildland firefighter, a role that reflects the same resilience, teamwork, and composure under pressure that he brings to his coaching.',
+      'Leon has been teaching Judo and Jiu-Jitsu in various capacities for over a decade and has worked with youth students since 2014. He is passionate about helping young athletes build discipline, confidence, and resilience through martial arts, and he is committed to creating a structured, positive training environment for the next generation. In addition to youth instruction, Leon looks forward to expanding Judo programming for adult students seeking to develop takedowns, balance, and stand-up grappling skills.',
+      'For Leon, martial arts has always been more than competition. It has been a stabilizing force and a path for personal growth through life’s challenges. He credits grappling and the martial arts community with helping shape the man he is today and is dedicated to paying that forward through coaching, mentorship, and leadership on the mats.',
+    ].join('\n\n'),
+    programs: ['bjj', 'kids'],
+  },
+  {
+    id: 'zach',
+    name: 'Professor Zach Borrelli',
+    title: 'Brazilian Jiu-Jitsu 1st Degree Black Belt',
+    mediaKey: 'zach',
+    altText: 'Professor Zach Borrelli, Brazilian Jiu-Jitsu black belt',
+    shortBio: 'Training since 2014 · 1st degree black belt',
+    fullBio: [
+      'My Brazilian Jiu-Jitsu journey began in 2014 when I first stepped into a gym with the goal of training MMA. What started as a desire to learn how to fight quickly turned into something much more meaningful.',
+      'As I spent more time on the mats, I discovered a passion for the art of Brazilian Jiu-Jitsu and realized that maintaining my long-term health, growing as a person, and building something sustainable were more important to me than stepping into the cage. I chose to dedicate myself to Jiu-Jitsu, and what began as a simple interest became a lifelong pursuit.',
+      'Today, as a first-degree black belt, I believe Jiu-Jitsu is about much more than techniques, submissions, or earning belts. It’s about discipline, perseverance, humility, and learning to overcome adversity both on and off the mats.',
+      'My goal as an instructor is to help others experience the same positive impact that Jiu-Jitsu has had on my life. Whether you’re stepping onto the mats for the first time or have years of experience, I believe everyone has something to learn and something to contribute. I’m passionate about helping students build confidence, develop resilience, and become better versions of themselves in a supportive, team-focused environment.',
+      'Jiu-Jitsu is more than a martial art. It’s a journey of growth, community, and becoming stronger together.',
+    ].join('\n\n'),
+    programs: ['bjj'],
+  },
+  {
+    id: 'amanda',
+    name: 'Coach Amanda Borrelli',
+    title: 'Youth Jiu-Jitsu Coach',
+    mediaKey: 'amanda',
+    altText: 'Coach Amanda Borrelli, youth jiu-jitsu coach',
+    shortBio: 'BJJ Purple Belt · Training since 2022 · Competitor',
+    fullBio: [
+      'I am currently a Brazilian Jiu-Jitsu purple belt and have been training since January 2022. I first began practicing Jiu-Jitsu following a significant loss in my life, and what initially began as a way to navigate a difficult season quickly developed into a deep passion for the sport.',
+      'I immediately became fascinated by the intricate movements, technical details, and unique mechanics of Jiu-Jitsu. I have had the opportunity to compete several times, experiencing success while also learning and growing significantly in my Jiu-Jitsu through the challenges and experiences that come with competition.',
+      'I particularly enjoy the technical side of Jiu-Jitsu and have developed a strong passion for coaching and helping others understand the details behind the techniques. I enjoy breaking down complex movements, developing practical skills, and helping students build confidence both on and off the mat.',
+    ].join('\n\n'),
+    programs: ['kids'],
+  },
+  {
+    id: 'haley',
+    name: 'Haley Marsteiner',
+    title: 'Cardio Kickboxing · Certified Personal Trainer',
+    mediaKey: 'haley',
+    altText: 'Haley Marsteiner, cardio kickboxing coach and certified personal trainer',
+    shortBio: '12 years as a CPT · Holistic nutrition · Founder, Seeking Vitality Wellness',
+    fullBio: [
+      'Brings 12 years of experience as a certified personal trainer, with specialized certifications in women’s fitness, pre- and postnatal exercise, TRX, and Lagree Fitness. She is also board-certified in health and wellness coaching and holistic nutrition. Her teaching experience spans multiple disciplines, including pole fitness, VersaClimber, combat fitness, boot camps, and Lagree.',
+      'The founder of Seeking Vitality Wellness and a mother of four boys, Haley takes a holistic approach to health, recognizing the connection between movement, nutrition, mindset, and recovery. She is passionate about helping people build functional, balanced strength so they can move freely, feel confident, and enjoy an active life.',
+    ].join('\n\n'),
+    programs: ['kickboxing'],
+  },
+  {
+    id: 'chance',
+    name: 'Coach Chance Marsteiner',
+    title: 'MMA / Kickboxing Coach',
+    mediaKey: 'chance',
+    altText: 'Coach Chance Marsteiner celebrating a win in the cage',
+    shortBio: '8 wins (7 MMA, 1 Muay Thai) · Wrestling background · Father of four',
+    fullBio: [
+      'Chance’s passion for the grappling arts began early and grew through high school wrestling, where he learned the determination, discipline, and character it takes to earn your place on the mat. After graduation, he pursued mixed martial arts, earning eight victories: seven in MMA and one in Muay Thai.',
+      'No stranger to hard work, Chance leads by example and takes on the same challenges he asks of his students. Some might call him a masochist. We just call him dedicated.',
+      'A husband and father of four boys, Chance understands the grind inside and outside the gym. He brings experience, grit, and a commitment to helping others improve. We’re fortunate to have him share his knowledge and inspire you to bring your best every time you step onto the mat.',
+    ].join('\n\n'),
+    programs: ['mma', 'kickboxing'],
+  },
+]

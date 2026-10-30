@@ -1,0 +1,39 @@
+# Copy to .dev.vars for local development (never commit .dev.vars)
+# In production, set these with: wrangler secret put <KEY>
+
+# Required for the admin endpoints
+ADMIN_TOKEN=change-me-to-something-long-and-random
+
+# ── Stripe (get these from stripe.com → Developers → API keys) ──────────────
+# STRIPE_SECRET_KEY=sk_test_...
+# STRIPE_PUBLISHABLE_KEY=pk_test_...
+# STRIPE_WEBHOOK_SECRET=whsec_...   (Stripe Dashboard → Webhooks → Reveal)
+
+# Stripe Price IDs (create in Stripe Dashboard → Products)
+# STRIPE_PRICE_UNLIMITED=price_...
+# STRIPE_PRICE_SINGLE=price_...
+# STRIPE_PRICE_DROPIN=price_...
+# STRIPE_PRICE_PRIVATE=price_...
+
+# Human-readable prices shown in the UI (update when Stripe prices are set)
+# DISPLAY_PRICE_UNLIMITED=$120/mo
+# DISPLAY_PRICE_SINGLE=$80/mo
+# DISPLAY_PRICE_DROPIN=$25
+# DISPLAY_PRICE_PRIVATE=$60
+
+# Site URL — used as return URL for Stripe Customer Portal
+# SITE_URL=https://madhousemmafit.com
+
+# ── Optional: alert hooks ────────────────────────────────────────────────────
+# Optional: Cloudflare Turnstile (https://dash.cloudflare.com → Turnstile)
+# TURNSTILE_SECRET=your-turnstile-secret-key
+
+# Optional: Discord / Slack / ntfy webhook for instant lead alerts
+# ALERT_WEBHOOK_URL=https://discord.com/api/webhooks/...
+# ALERT_WEBHOOK_URL=https://hooks.slack.com/services/...
+# ALERT_WEBHOOK_URL=https://ntfy.sh/your-topic
+
+# Optional: Email alerts via Resend (https://resend.com — free tier: 100/day)
+# RESEND_API_KEY=re_...
+# ALERT_EMAIL_TO=madhousemmaandfitness@gmail.com
+# ALERT_EMAIL_FROM=leads@yourdomain.com

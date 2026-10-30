@@ -1,0 +1,8 @@
+name = "madhouse-mma"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "madhouse-leads"
+database_id = "674ce674-8c10-45f7-96af-db31e6837f84"
