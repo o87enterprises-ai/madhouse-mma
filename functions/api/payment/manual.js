@@ -38,7 +38,7 @@ export async function onRequestPost({ request, env }) {
     } catch (err) {
       if (err.message?.includes('UNIQUE constraint failed') && attempt < 4) continue
       console.error('[manual] D1 error:', err.message)
-      return json({ error: 'Server error. Please call us at 541-555-0100.' }, 500)
+      return json({ error: 'Server error. Please call us at 541-390-6334.' }, 500)
     }
   }
   return json({ error: 'Could not generate reference code. Please try again.' }, 500)

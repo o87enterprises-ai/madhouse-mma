@@ -54,7 +54,7 @@ export default function Kids({ onCTA }) {
             <p className="kids-section__note">
               {/* TODO(client): confirm age ranges */}
               Questions about age groups? Call us at{' '}
-              <a href="tel:+15415550100">541-555-0100</a>.
+              <a href="tel:+15413906334">541-390-6334</a>.
             </p>
           </Reveal>
         </div>

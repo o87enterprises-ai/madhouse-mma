@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     q: 'What age groups do you teach?',
-    a: 'We have classes for adults and for kids: a Parent-Assist program for ages 3–6, and youth kickboxing and jiu-jitsu for ages 7–13. Check the schedule for class times — or just call us at 541-555-0100 and we\'ll point you to the right class.',
+    a: 'We have classes for adults and for kids: a Parent-Assist program for ages 3–6, and youth kickboxing and jiu-jitsu for ages 7–13. Check the schedule for class times — or just call us at 541-390-6334 and we\'ll point you to the right class.',
   },
   {
     q: 'Can parents watch kids\' classes?',

@@ -62,5 +62,5 @@ export const manualMethods = [
   { id: 'zelle',   label: 'Zelle',    handle: null }, // e.g. 'hello@grovemma.example'
   { id: 'cashapp', label: 'Cash App', handle: null }, // e.g. '$GroveMMA'
   { id: 'venmo',   label: 'Venmo',    handle: null }, // e.g. '@GroveMMA'
-  { id: 'cash',    label: 'Cash',     handle: 'Drop it off at the gym — 123 Example St, Cottage Grove' },
+  { id: 'cash',    label: 'Cash',     handle: 'Drop it off at the gym — 172 Gateway Blvd, Cottage Grove' },
 ]

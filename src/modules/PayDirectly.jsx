@@ -73,7 +73,7 @@ export default function PayDirectly() {
                   <span className="pay-directly__ref-code">{result.referenceCode}</span>
                   <p>
                     Send your payment to the {result.method} handle above, then text us at{' '}
-                    <a href="tel:+15415550100">541-555-0100</a> with this code.
+                    <a href="tel:+15413906334">541-390-6334</a> with this code.
                     We'll confirm within a few hours.
                   </p>
                 </div>
