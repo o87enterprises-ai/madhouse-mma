@@ -38,7 +38,6 @@ export const programs = [
     subtitle: 'Confidence Through Technique, Control, and Problem-Solving',
     mediaKey: 'bjj',
     // Portrait photo in a 3:2 card: anchor near the top so both heads stay in frame.
-    imagePosition: 'center 6%',
     altText: 'Jiu-jitsu coaches at Grove MMA',
     intro: [
       'Brazilian Jiu-Jitsu (BJJ) is a grappling-based martial art that teaches students how to control, escape, and defend themselves using positioning, leverage, and technique rather than relying solely on strength.',
