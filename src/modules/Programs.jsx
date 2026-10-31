@@ -15,7 +15,6 @@ function ProgramCard({ prog, onCTA }) {
           src={media[prog.mediaKey]}
           alt={prog.altText}
           className="program-card__img"
-          style={prog.imagePosition ? { objectPosition: prog.imagePosition } : undefined}
           loading="lazy"
           width="960"
           height="640"
